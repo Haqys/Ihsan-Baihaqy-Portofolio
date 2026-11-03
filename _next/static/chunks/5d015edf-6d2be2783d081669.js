@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9793],{9610:(e,t,l)=>{l.d(t,{B8_:()=>p,Poj:()=>s,aVR:()=>n,mqy:()=>r,suP:()=>u,zNS:()=>a});let s="http.url",u="sentry.segment.name",a="sentry.transaction",n="url.full",r="url.path",p="url.template"}}]);

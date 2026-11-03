@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ihsan Baihaqy Setiaputra — Junior Web Developer Portfolio</title>
+  <meta
+    name="description"
+    content="Interactive portfolio of Ihsan Baihaqy Setiaputra — Junior Web Developer specializing in JavaScript, Next.js, Tailwind CSS, Python, and Backend Automation."
+  />
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Fluid Custom Cursor Follower -->
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Sticky Pill Navigation Header -->
+  <header class="site-header">
+    <nav class="nav-bar" aria-label="Primary Navigation">
+      <a href="#summary" class="brand-identity">
+        <img src="profile.jpg" alt="Ihsan Baihaqy Setiaputra" class="brand-avatar" />
+        <span>Ihsan Baihaqy Setiaputra</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#summary" class="nav-link active">Summary</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience &amp; Education</a>
+      </div>
+
+      <div class="nav-actions">
+        <button
+          type="button"
+          class="cmd-btn"
+          id="open-cmd-btn"
+          title="Quick Actions &amp; Search (Ctrl+K)"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Quick Jump</span>
+          <span class="kbd-shortcut">Ctrl K</span>
+        </button>
+
+        <button
+          type="button"
+          class="icon-btn"
+          id="theme-toggle-btn"
+          aria-label="Toggle Pastel Orange Cream / Cozy Terracotta Mode"
+          title="Switch Pastel Orange Cream / Cozy Espresso Mode"
+        >
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- ======================================================================
+         1. PLAYFUL BENTO HERO & PROFESSIONAL SUMMARY SECTION
+         ====================================================================== -->
+    <section class="hero-section" id="summary">
+      <div class="bento-hero-grid">
+        <!-- Left Main Bento Card -->
+        <div class="hero-bento-main reveal-up">
+          <div>
+            <div class="hero-badges">
+              <span class="pastel-pill pill-orange">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Jakarta, Indonesia</span>
+              </span>
+              <span class="pastel-pill pill-butter">Full-Stack Web &amp; Backend Automation</span>
+              <div class="floating-sticker">
+                <span class="live-pulse-dot"></span>
+                <span>Freelance Web Developer • Sept 2026 – Present</span>
+              </div>
+            </div>
+
+            <h1 class="hero-title">Ihsan Baihaqy Setiaputra</h1>
+            <div class="hero-role-tag">
+              <span>Junior Web Developer</span>
+            </div>
+
+            <p class="hero-summary">
+              Highly motivated aspiring Junior Web Developer with a strong foundation in modern web
+              technologies (<strong>JavaScript, Next.js, Tailwind CSS</strong>) and backend automation
+              (<strong>Python, SQL</strong>). Experienced in full-stack application development, API
+              integrations, and deploying scalable web solutions. Combines a background in digital
+              business with hands-on technical expertise to build user-centric, efficient, and
+              performance-driven web applications.
+            </p>
+          </div>
+
+          <div class="hero-cta-row">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Live Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+            </a>
+
+            <button type="button" class="btn btn-pastel-orange" id="preview-cv-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span>Preview Original CV (PDF)</span>
+            </button>
+
+            <a
+              href="Ihsan_Baihaqy_Setiaputra_CV.pdf"
+              download="Ihsan_Baihaqy_Setiaputra_CV.pdf"
+              class="btn btn-cream"
+            >
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Portrait Bento Card (Hand gesturing toward intro on the left!) -->
+        <div class="profile-portrait-card reveal-up">
+          <div class="portrait-frame">
+            <img
+              src="profile.jpg"
+              alt="Portrait of Ihsan Baihaqy Setiaputra"
+              class="portrait-img"
+            />
+            <div class="portrait-caption-bar">
+              <span class="pastel-pill pill-orange" style="font-size:0.76rem; padding:4px 12px;">
+                <span class="live-pulse-dot"></span>
+                <span>Ihsan Baihaqy S.</span>
+              </span>
+              <span class="portrait-tag">Web Dev &amp; Creator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Bento Row: Direct Contact (2x2 Grid) & Education Tile -->
+      <div class="bento-sub-grid">
+        <div class="contact-bento-card reveal-up">
+          <div class="bento-card-header">
+            <h2 class="side-card-title">Direct Contact &amp; Links</h2>
+            <span class="pastel-pill pill-orange" style="font-size:0.72rem; padding:3px 10px;">Tap to Copy / Open</span>
+          </div>
+
+          <div class="contact-list contact-grid-2x2">
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-item-left">
+                <span class="contact-icon-box pill-orange">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </span>
+                <div class="contact-meta">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:haqysetiaputra@gmail.com" class="contact-value">haqysetiaputra@gmail.com</a>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="contact-action-btn"
+                data-copy-value="haqysetiaputra@gmail.com"
+                data-copy-label="Copied email: haqysetiaputra@gmail.com"
+              >
+                Copy
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-item">
+              <div class="contact-item-left">
+                <span class="contact-icon-box pill-butter">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </span>
+                <div class="contact-meta">
+                  <span class="contact-label">Phone / WhatsApp</span>
+                  <a href="tel:+6285693946061" class="contact-value">+6285693946061</a>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="contact-action-btn"
+                data-copy-value="+6285693946061"
+                data-copy-label="Copied phone: +6285693946061"
+              >
+                Copy
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="contact-item">
+              <div class="contact-item-left">
+                <span class="contact-icon-box pill-apricot">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </span>
+                <div class="contact-meta">
+                  <span class="contact-label">LinkedIn</span>
+                  <a
+                    href="https://www.linkedin.com/in/baihaqy-setiaputra-844119328/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-value"
+                  >
+                    in/baihaqy-setiaputra-844119328
+                  </a>
+                </div>
+              </div>
+              <a
+                href="https://www.linkedin.com/in/baihaqy-setiaputra-844119328/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-action-btn"
+              >
+                Open ↗
+              </a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="contact-item">
+              <div class="contact-item-left">
+                <span class="contact-icon-box pill-sand">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </span>
+                <div class="contact-meta">
+                  <span class="contact-label">GitHub</span>
+                  <a
+                    href="https://github.com/Haqys"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-value"
+                  >
+                    github.com/Haqys
+                  </a>
+                </div>
+              </div>
+              <a
+                href="https://github.com/Haqys"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-action-btn"
+              >
+                Open ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Bento Tile -->
+        <div class="education-bento-card reveal-up">
+          <div>
+            <div class="edu-mini-header">
+              <span>Current Education</span>
+              <span>2024 – Present</span>
+            </div>
+            <div class="edu-mini-uni">Cakrawala University</div>
+            <div class="edu-mini-degree">
+              Bachelor of Digital Business (5th Semester)
+            </div>
+          </div>
+          <div style="margin-top:16px;">
+            <span class="pastel-pill pill-butter" style="font-size:0.78rem;">
+              Specialization: Digital Marketing
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       INTERACTIVE KINETIC SKILL MARQUEE RIBBON (Click any item to filter!)
+       ======================================================================== -->
+  <div class="marquee-wrapper" aria-label="Interactive Technical Skills Ticker">
+    <div class="marquee-track" id="skill-marquee-track"></div>
+  </div>
+
+  <main class="container">
+    <!-- ======================================================================
+         2. INTERACTIVE TECHNICAL SKILLS PLAYGROUND
+         ====================================================================== -->
+    <section class="section-block" id="skills">
+      <div class="section-header reveal-up">
+        <div>
+          <span class="section-eyebrow pill-orange">Interactive Skill Filter</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Tap any skill chip below (or in the moving ribbon above) to dynamically spotlight the projects where that skill is used.
+          </p>
+        </div>
+
+        <div class="category-tabs" role="tablist" aria-label="Skill Categories">
+          <button type="button" class="tab-btn active" data-skill-group-tab="all">All Skills</button>
+          <button type="button" class="tab-btn" data-skill-group-tab="web-dev">Web Dev</button>
+          <button type="button" class="tab-btn" data-skill-group-tab="backend">Backend</button>
+          <button type="button" class="tab-btn" data-skill-group-tab="tools">Tools &amp; Deploy</button>
+          <button type="button" class="tab-btn" data-skill-group-tab="additional">AI &amp; Automation</button>
+        </div>
+      </div>
+
+      <!-- Active Skill Filter Indicator Banner -->
+      <div class="active-skill-banner" id="active-skill-banner">
+        <span id="active-skill-banner-text"></span>
+        <button type="button" class="clear-skill-btn" id="clear-skill-filter-btn">
+          Reset Filter ✕
+        </button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid-container"></div>
+    </section>
+
+    <!-- ======================================================================
+         3. KEY PROJECTS, FREELANCE WORK & DEVELOPMENT SYSTEMS
+         ====================================================================== -->
+    <section class="section-block" id="projects">
+      <div class="section-header reveal-up">
+        <div>
+          <span class="section-eyebrow pill-butter">Interactive Project Deck</span>
+          <h2 class="section-title">Key Projects &amp; Development Systems</h2>
+          <p class="section-subtitle">
+            Unfold any project card for quick architecture notes, or click
+            <strong>Open Live Workspace</strong> to interact with the deployed Vercel apps right inside this page.
+          </p>
+        </div>
+
+        <div class="category-tabs" role="tablist" aria-label="Project Filter">
+          <button type="button" class="tab-btn active" data-project-tab="all">All Projects (4)</button>
+          <button type="button" class="tab-btn" data-project-tab="live">Live Web Apps (3)</button>
+          <button type="button" class="tab-btn" data-project-tab="key-systems">Key Systems (2)</button>
+          <button type="button" class="tab-btn" data-project-tab="freelance">Freelance (2)</button>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projects-grid-container"></div>
+    </section>
+
+    <!-- ======================================================================
+         4. EXPERIENCE & EDUCATION STEPPING CARDS
+         ====================================================================== -->
+    <section class="section-block" id="experience">
+      <div class="section-header reveal-up">
+        <div>
+          <span class="section-eyebrow pill-apricot">Career &amp; Academic Journey</span>
+          <h2 class="section-title">Experience &amp; Education</h2>
+          <p class="section-subtitle">
+            Verified timeline of roles, client deliverables, and university specialization from the CV.
+          </p>
+        </div>
+
+        <div class="category-tabs" role="tablist" aria-label="Timeline Filter">
+          <button type="button" class="tab-btn active" data-timeline-tab="all">All (4)</button>
+          <button type="button" class="tab-btn" data-timeline-tab="experience">Experience (3)</button>
+          <button type="button" class="tab-btn" data-timeline-tab="education">Education (1)</button>
+        </div>
+      </div>
+
+      <div class="timeline-layout" id="timeline-list-container"></div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-copy">
+          <strong>Ihsan Baihaqy Setiaputra</strong> — Jakarta, Indonesia
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a
+          href="https://metroscope-eight.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="pastel-pill pill-orange"
+        >
+          Metroscope ↗
+        </a>
+        <a
+          href="https://talaswara.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="pastel-pill pill-butter"
+        >
+          TALASWARA ↗
+        </a>
+        <a
+          href="https://nexus-market-analyzer.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="pastel-pill pill-apricot"
+        >
+          Nexus Market Analyzer ↗
+        </a>
+        <a
+          href="https://github.com/Haqys"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="pastel-pill pill-sand"
+        >
+          GitHub ↗
+        </a>
+        <a
+          href="https://www.linkedin.com/in/baihaqy-setiaputra-844119328/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="pastel-pill pill-orange"
+        >
+          LinkedIn ↗
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       INTERACTIVE WORKSPACE MODAL (LIVE APP IFRAME / ARCHITECTURE / CV PDF)
+       ======================================================================== -->
+  <div class="modal-backdrop" id="workspace-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-text">
+    <div class="modal-window">
+      <div class="modal-toolbar">
+        <div class="modal-title-group">
+          <span class="brand-monogram">IBS</span>
+          <h3 class="modal-title" id="modal-title-text">Project Preview</h3>
+        </div>
+
+        <div class="viewport-switcher" id="modal-viewport-switcher">
+          <button type="button" class="vp-btn active" data-vp="desktop">Desktop</button>
+          <button type="button" class="vp-btn" data-vp="tablet">Tablet (768px)</button>
+          <button type="button" class="vp-btn" data-vp="mobile">Mobile (390px)</button>
+        </div>
+
+        <div class="modal-actions">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-btn project-btn-live"
+            id="modal-external-link"
+          >
+            <span>Open in New Tab ↗</span>
+          </a>
+          <button
+            type="button"
+            class="modal-close-btn"
+            id="modal-close-btn"
+            aria-label="Close Preview Modal"
+          >
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-content-stage" id="modal-stage-container"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       COMMAND PALETTE MODAL (Ctrl+K)
+       ======================================================================== -->
+  <div class="cmd-backdrop" id="cmd-backdrop" role="dialog" aria-modal="true" aria-label="Quick Jump Palette">
+    <div class="cmd-dialog">
+      <div class="cmd-input-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input
+          type="text"
+          class="cmd-input"
+          id="cmd-search-input"
+          placeholder="Jump to a live project, preview CV, or copy contact info..."
+          autocomplete="off"
+        />
+      </div>
+      <div class="cmd-results" id="cmd-results-list"></div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
