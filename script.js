@@ -660,6 +660,7 @@ function openProjectModal(projectId) {
   if (project.liveUrl) {
     externalBtn.style.display = "inline-flex";
     externalBtn.href = project.liveUrl;
+    externalBtn.removeAttribute("download");
     externalBtn.querySelector("span").textContent = "Open in New Tab ↗";
   } else {
     externalBtn.style.display = "none";
@@ -750,15 +751,95 @@ function openCvPdfModal() {
   vpSwitcher.style.display = "none";
   externalBtn.style.display = "inline-flex";
   externalBtn.href = CV_DATA.profile.cvPdf;
-  externalBtn.querySelector("span").textContent = "Open / Download PDF ↗";
+  externalBtn.setAttribute("download", "Ihsan_Baihaqy_Setiaputra_CV.pdf");
+  externalBtn.querySelector("span").textContent = "Download PDF ↗";
 
   stageEl.innerHTML = `
-    <div class="iframe-wrapper">
-      <iframe
-        src="${CV_DATA.profile.cvPdf}"
-        class="preview-iframe"
-        title="Ihsan Baihaqy Setiaputra CV PDF"
-      ></iframe>
+    <div class="cv-paper-stack">
+      <!-- Page 1 of CV -->
+      <article class="cv-a4-page" aria-label="CV Page 1">
+        <span class="cv-page-label">Page 1 of 2</span>
+        <h2 class="cv-doc-name">IHSAN BAIHAQY SETIAPUTRA</h2>
+        <p class="cv-doc-contact">
+          Jakarta, Indonesia &bull;
+          <a href="mailto:haqysetiaputra@gmail.com">haqysetiaputra@gmail.com</a> &bull;
+          +6285693946061 &bull;
+          <a href="https://www.linkedin.com/in/baihaqy-setiaputra-844119328/" target="_blank" rel="noopener noreferrer">LinkedIn</a> &bull;
+          <a href="https://github.com/Haqys" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+
+        <h3 class="cv-doc-section-title">PROFESSIONAL SUMMARY</h3>
+        <p class="cv-doc-p">
+          Highly motivated aspiring Junior Web Developer with a strong foundation in modern web
+          technologies (JavaScript, Next.js, Tailwind CSS) and backend automation (Python, SQL).
+          Experienced in full-stack application development, API integrations, and deploying
+          scalable web solutions. Combines a background in digital business with hands-on
+          technical expertise to build user-centric, efficient, and performance-driven web
+          applications.
+        </p>
+
+        <h3 class="cv-doc-section-title">TECHNICAL SKILLS</h3>
+        <ul class="cv-doc-list">
+          <li><strong>Web Development:</strong> JavaScript, Next.js, Tailwind CSS, HTML/CSS</li>
+          <li><strong>Programming &amp; Backend:</strong> Python, SQL, RESTful API Integration</li>
+          <li><strong>Tools &amp; Deployment:</strong> Git, GitHub, Vercel</li>
+          <li><strong>Additional Skills:</strong> Custom AI Pipelines, Headless Automation Systems</li>
+        </ul>
+
+        <h3 class="cv-doc-section-title">KEY PROJECTS &amp; DEVELOPMENT SYSTEMS</h3>
+
+        <h4 class="cv-doc-subheading">Nexus Market Analyzer – Web Dashboard</h4>
+        <ul class="cv-doc-list">
+          <li>Developed an interactive dashboard interface and web application to systematically process market data into actionable insights.</li>
+          <li>Integrated backend analytical models with front-end components to evaluate barrier to entry and formulate optimal pricing strategies.</li>
+        </ul>
+
+        <h4 class="cv-doc-subheading">End-to-End Headless Automation System</h4>
+        <ul class="cv-doc-list">
+          <li>Developed an independent backend-only automation system from scratch.</li>
+          <li>Implemented JavaScript and Python programming logic to handle headless workflows and API integration (YouTube API).</li>
+        </ul>
+
+        <h3 class="cv-doc-section-title">EXPERIENCE</h3>
+        <h4 class="cv-doc-subheading">Freelance Web Developer</h4>
+        <p class="cv-doc-period">September 2026 - Present</p>
+      </article>
+
+      <!-- Page 2 of CV -->
+      <article class="cv-a4-page" aria-label="CV Page 2">
+        <span class="cv-page-label">Page 2 of 2</span>
+        <ul class="cv-doc-list" style="margin-top:8px;">
+          <li>
+            <strong>Metroscope:</strong> Developed and deployed an educational mentoring ecosystem and
+            competition preparation web application using Next.js. Architected the front-end
+            interface and managed full deployment lifecycles via Vercel.
+          </li>
+          <li>
+            <strong>TALASWARA:</strong> Built a modern e-commerce platform and visual brand identity for a
+            sustainable fashion brand, developing modern web interfaces using Next.js and
+            managing deployments to Vercel via GitHub.
+          </li>
+        </ul>
+
+        <h4 class="cv-doc-subheading">Music Annotator | BeatPulse Labs</h4>
+        <p class="cv-doc-period">2026</p>
+        <ul class="cv-doc-list">
+          <li>Performed remote audio data annotation, analysis, and curation to support machine learning model development and audio processing systems.</li>
+        </ul>
+
+        <h4 class="cv-doc-subheading">Class Facilitator for Hybrid University Courses | Cakrawala University</h4>
+        <p class="cv-doc-period">2026</p>
+        <ul class="cv-doc-list">
+          <li>Managed technical infrastructure for hybrid classes, broadcasting hardware/software (streaming), and student attendance data backup systems.</li>
+        </ul>
+
+        <h3 class="cv-doc-section-title">EDUCATION</h3>
+        <h4 class="cv-doc-subheading">Cakrawala University</h4>
+        <p class="cv-doc-period">2024 - Present</p>
+        <ul class="cv-doc-list">
+          <li>Bachelor of Digital Business (5th Semester) — Specialization: Digital Marketing</li>
+        </ul>
+      </article>
     </div>
   `;
 
